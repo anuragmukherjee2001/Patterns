@@ -9,26 +9,27 @@ int main(){
     cout << "Enter the number of rows" << endl;
     
     cin >> n;
-    int k = 1;
-    int l = 1;
+    int k;
 
     for(int i = n; i >= 1; i--){
-        for(int j = 1; j <= i; j++){
-            cout << k << " ";
-            k +=2;
+        k = i;
+        for(int j = 1; j <= n; j++){
+
+            if(k > j){
+                cout << n << " ";
+            }
         }
+        k++;
         cout << endl;
-        k = l + 2;
-        l+=2;
     }
 
     return 0;
 }
 
-// The pattern is:- 
+// The pattern is:-
 
-// 13579
-// 3579
-// 579
-// 79
-// 9
+// 55555
+// 45555
+// 34555
+// 23455
+// 12345
